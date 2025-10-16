@@ -1,0 +1,23 @@
+### For 🍎 macOS
+
+**Requirements:** Python 3 (pre-installed on macOS 10.15+)
+
+**Installation:**
+
+# Clone or download
+git clone https://github.com/yourusername/rose-server.git
+cd rose-server
+
+# Run (no installation needed!)
+python3 rose_server.py
+```
+
+**First Time Setup:**
+ macOS might ask for permission to access folders
+ Click "Allow" when prompted
+ If you get a security warning, go to System Preferences → Security & Privacy → Click "Open Anyway"
+
+Do all the above things and Enjoy ...😎!!!
+
+
+⚠️ macOS (Should work - community feedback welcome!)
