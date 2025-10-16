@@ -1,0 +1,5 @@
+Attention : If this software doesn't open or give errors , Or you can not connect with other devices ( Basically you see this happening in windows for its firewall config )
+or in Linux or macOS it maybe you don't have python installed then install a python version ... IF not then config your firewalls .. the problem is there..
+
+If above the things is happening with you then follow the troubleshooting guides ... in this folder !!!!
+   
