@@ -1,0 +1,10 @@
+For 🐧 Linux !!!
+
+# Install Python3 and Tkinter (if not already installed)
+sudo apt install python3 python3-tk
+
+# Run Rose Server
+python3 start_server.py
+
+
+Run the above code and Enjoy ......!!!💖
