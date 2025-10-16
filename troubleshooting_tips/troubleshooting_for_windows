@@ -1,0 +1,79 @@
+
+
+## 🧱 **Common Issues & Fixes (Windows Users)**
+
+If you’re on **Windows 10/11**, you might face a few issues the first time you run the server — don’t worry, here’s how to fix them easily 👇
+
+### ⚠️ **1. “Server not accessible” or “Connection refused”**
+
+**Possible Cause:**
+Your Windows Firewall is blocking the port (for example, port 80 or 8080).
+
+**Fix:**
+
+1. Open the **Start Menu → Windows Defender Firewall → Advanced Settings**
+2. Go to **Inbound Rules → New Rule**
+3. Choose **Port → TCP → Specific local port → (e.g. 80 or 8080)**
+4. Allow the connection → Next → Check all profiles → Finish ✅
+5. Do the same for **Outbound Rules**
+
+Now your HTTP server can communicate freely through that port.
+
+---
+
+### 🧱 **2. “Permission denied” when starting on port 80**
+
+**Reason:**
+Ports below 1024 (like 80) are *privileged ports*, and Windows may restrict access to them without admin rights.
+
+**Fix:**
+
+* Either **run the app as Administrator**,
+  **or**
+* Use a higher port like **8080** or **8888** (recommended).
+
+Example:
+
+```bash
+http://localhost:8080
+```
+
+---
+
+### 🌐 **3. “Page not loading in browser”**
+
+**Check these:**
+
+* Make sure the **server is running** (don’t close the app window).
+* Ensure **no other app** (like Skype, IIS, or Apache) is already using the same port.
+* Try opening in your browser manually:
+
+  ```
+  http://127.0.0.1:<your_port>
+  ```
+
+  or
+
+  ```
+  http://localhost:<your_port>
+  ```
+
+---
+
+### 🔍 **4. “Access denied” to a folder or file**
+
+**Reason:**
+Windows file permissions prevent Python from serving files in system directories.
+
+**Fix:**
+
+* Always choose a **safe folder** like your Desktop or Documents, not `C:\Windows` or `C:\Program Files`.
+
+---
+
+### 🧠 **Pro Tip**
+
+If you’re experimenting a lot, pick a non-privileged port like `8080` or `9090`.
+They almost never require admin rights and are great for testing HTTP servers locally.
+
+
